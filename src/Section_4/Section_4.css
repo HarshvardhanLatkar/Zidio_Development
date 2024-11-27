@@ -1,0 +1,140 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&family=Rajdhani:wght@300;700&display=swap");
+
+.offerings-section {
+  padding: 50px 80px;
+  background-color: #021433;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.offerings-header h3 {
+  color: #0b59db;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.offerings-header h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 40px;
+  color: white;
+}
+
+.offerings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.offering-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #0B59DB;
+  transition: height 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.offering-card:hover::before {
+  height: 100%; 
+}
+
+.offering-card * {
+  position: relative;
+  z-index: 1; 
+}
+
+.offering-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offering-image-wrapper img {
+  padding: 20px;
+  margin: 20px;
+  background-color: #e6eefb;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.offering-number {
+  background-color: #e6eefb;
+  padding: 15px 25px 15px 40px;
+  border-radius: 50px 0 0 50px;
+  transition: background-color 0.3s ease;
+}
+
+.offering-card:hover .offering-number {
+  background-color: white;  
+  color: #0B59DB;
+}
+
+.offering-details {
+  padding: 20px;
+}
+
+.offering-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "Rajdhani", sans-serif;
+  text-align: start;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.offering-card:hover .offering-title {
+  color: white;
+}
+
+.offering-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: start;
+  transition: color 0.3s ease;
+}
+
+.offering-card:hover .offering-description {
+  color: #e6eefb;  
+}
+
+/* Offering Link */
+.offering-link {
+    text-decoration: none;
+    color: #0b59db;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .offering-card:hover .offering-link {
+    color: white; 
+  }
+  
+  .offering-link i {
+    margin-left: 8px;
+    transition: color 0.3s ease;  
+  }
+  
+  .offering-card:hover .offering-link i {
+    color: white;  
+  }
+  

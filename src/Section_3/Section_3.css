@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+.section-3-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 50px 80px;
+  max-height: 770px;
+  gap: 40px;
+  background-color: #f3f7fd;
+  font-family: "Montserrat", "Nunito Sans", sans-serif;
+}
+
+.experience-info {
+  background-color: #0b59db;
+  height: 200px;
+  width: 160px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.experience-info h1 {
+  color: white;
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 50px;
+  background-color: #1164ed;
+  border-radius: 10px 10px 0px 0px;
+}
+.experience-info h2 {
+  color: white;
+  background-color: #1164ed;
+  border-radius: 0px 0px 50px 50px;
+}
+.experience-info h3 {
+  color: white;
+  padding-top: 10px;
+}
+.experience-image {
+  position: relative;
+  bottom: 200px;
+}
+.shape-image {
+  position: relative;
+  bottom: 320px;
+  left: 340px;
+  animation: movement 1.2s linear infinite alternate;
+}
+
+.section-3-content {
+  margin-left: 50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+}
+.section-3-content h3 {
+  color: #0b59db;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.section-3-content h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.section-3-content p {
+  font-size: 19px;
+  color: #939596;
+  margin-top: 10px;
+}
+
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.service-card img {
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+.service-card h4 {
+  font-size: 20px;
+}
+
+.about-more {
+  display: flex;
+  margin: 20px;
+}
+
+.section-3-content h3,
+.section-3-content h2,
+.section-3-content p {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.about-more a {
+  background-color: #0b59db;
+  text-decoration: none;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: #0b59db solid 2px;
+  color: white;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-more a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.about-more a:hover::before {
+  left: 0;
+}
+
+.about-more a span {
+  position: relative;
+  z-index: 1;
+}
+
+.about-more a:hover {
+  color: #0b59db;
+}
+.about-more a i {
+  margin-left: 10px;
+}
+.about-more img {
+  height: 50px;
+  position: relative;
+  top: 15px;
+  animation: movement-arrow 1.2s linear infinite alternate;
+}
+@keyframes movement {
+  0% {
+    left: 340px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+@keyframes movement-arrow {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 60px;
+  }
+}
